@@ -23,10 +23,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-include  __DIR__.' /../setup-codes.php ';
+/**
+ *Just requiring and including again for redundance idk but it helped a lot
+ */
+
+include  __DIR__.' /../setup-codes.php '; 
 require_once __DIR__.' /../setup-codes.php ';
 
-get_category_shortcode( $catslide );
+get_category_shortcode( $catslide ); //Generates the shortcode above the archive
 echo '<br>';
 
 ?>

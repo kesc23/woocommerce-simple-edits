@@ -28,7 +28,7 @@ include_once  __DIR__.'/../setup-codes.php';
 
 if ( ! empty( $breadcrumb ) ) {
 
-	get_site_part_shortcode( $catshtcd );
+	get_site_part_shortcode( $catshtcd ); //Creates the shortcode for the site part above BC
 	
 	echo $wrap_before;
 	
