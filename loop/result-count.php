@@ -27,8 +27,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  *Just requiring and including again for redundance idk but it helped a lot
  */
 
-include  __DIR__.' /../setup-codes.php '; 
-require_once __DIR__.' /../setup-codes.php ';
+define('__LOOP__', dirname(dirname(__FILE__))); //Calls the directory for this file, then references to the setup file
+
+require_once (__LOOP__.'/setup-codes.php');
+include  (__LOOP__.'/setup-codes.php');
 
 get_category_shortcode( $catslide ); //Generates the shortcode above the archive
 echo '<br>';
