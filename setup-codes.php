@@ -13,7 +13,7 @@ require_once 'kesc-function.php';
  */
 
 //ID PARA O ELEMENTO QUE VAI ANTERIOR AO BREADCRUMB
-$catshtcd = 255;
+$catshtcd = 266;
  
 //ID PARA O ELEMENTO QUE VAI ANTERIOR AO FILTRO
 $catslide = 257;
